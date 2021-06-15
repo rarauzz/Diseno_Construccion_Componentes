@@ -1,4 +1,4 @@
-package demoPackage;
+package com.diseno.classes;
 
 public class Main {
 
