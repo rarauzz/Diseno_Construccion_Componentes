@@ -1,4 +1,6 @@
-package com.diseno.classes;
+package com.diseno.main;
+
+import com.diseno.bl.lambda.demoClass;
 
 public class Main {
 

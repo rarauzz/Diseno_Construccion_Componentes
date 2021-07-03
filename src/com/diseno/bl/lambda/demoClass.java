@@ -1,14 +1,15 @@
-package com.diseno.classes;
+package com.diseno.bl.lambda;
 
 import com.amazonaws.services.lambda.runtime.Context;
+
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
-public class demoClass implements RequestHandler<LambdaRequest,Persona> {
+public class demoClass implements RequestHandler<LambdaRequest,LambdaResponse> {
 
 	@Override
-	public Persona handleRequest(LambdaRequest request, Context context) {
+	public LambdaResponse handleRequest(LambdaRequest request, Context context) {
 		
-	Persona response = new Persona();
+	LambdaResponse response = new LambdaResponse();
 	
 	if (request.getOption().equals("1")) {
 		response.setNombre("Rodri");
@@ -18,6 +19,7 @@ public class demoClass implements RequestHandler<LambdaRequest,Persona> {
 		response.setMasaMuscular(35);
 	}
 	return response;
+	
 	}
 	
 

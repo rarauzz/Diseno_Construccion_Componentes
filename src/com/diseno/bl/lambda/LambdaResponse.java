@@ -1,6 +1,6 @@
-package com.diseno.classes;
+package com.diseno.bl.lambda;
 
-public class Persona {
+public class LambdaResponse {
 	private String nombre;
 	private String apellidos;
 	private int edad;
@@ -9,7 +9,7 @@ public class Persona {
 	
 	
 	
-	public Persona(String nombre, String apellidos, int edad, 
+	public LambdaResponse(String nombre, String apellidos, int edad, 
 			double peso, double masaMuscular) {
 		super();
 		this.nombre = nombre;
@@ -20,7 +20,7 @@ public class Persona {
 	}
 	
 	
-	public Persona() {
+	public LambdaResponse() {
 		this.nombre = "*";
 		this.apellidos = "*";
 		this.edad = -1;

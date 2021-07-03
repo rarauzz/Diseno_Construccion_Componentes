@@ -1,4 +1,4 @@
-package com.diseno.classes;
+package com.diseno.bl.lambda;
 
 public class LambdaRequest {
 	
